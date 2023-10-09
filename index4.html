@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Formulário de consumo de energias</h1>
+    <br>
+    <br>
+
+    <form action="enviar.php" method="post" name="cadastro">
+
+        <tr>
+            <td>
+                <label for="">Digite nome completo:</label>
+            </td>
+            <td>
+                <input type="text" id="nome" name="nome" maxlength="80" placeholder="digite seu nome completo"
+                    required>
+            </td>
+        </tr>
+        <br>
+        <br>
+        <tr>
+            <td>
+                <label>Digite sua data de nascimento: </label>
+            </td>
+            <td>
+                <input type="date" id="data-nasc" min="1960-01-01" max="2006-01-01" maxlength="80"
+                    placeholder="digite seu nome completo" name="data-nasc" required>
+
+            </td>
+        </tr>
+
+        <br>
+        <br>
+        <tr>
+
+            <td>
+                <label for="">Digite seu cep:</label>
+            </td>
+            <td>
+                <input type="text" id="cep" name="cep" maxlength="80" placeholder="Digite seu cep" required>
+            </td>
+        </tr>
+        <br>
+        <br>
+
+        </tr>
+        <br>
+        <br>
+
+
+        <tr>
+            <td> <label for="">Anexar foto da conta de agua:</label>
+                <input type="file" id="foto" name="required">
+            </td>
+            <br>
+            <br>
+        <tr>
+            <td>
+                <label>email</label>
+            </td>
+            <td>
+                <input type="email" id="email" email="email" maxlength="20" placeholder="digite seu email"
+                    required>
+                <input type="password" id="senha" name="senha" placeholder="digite sua senha">
+                <br>
+                <br>
+            </td>
+        </tr>
+
+
+        <br>
+        <br>
+
+        <tr>
+            <td>
+                <label for=":">cidade:</label>
+            </td>
+            <td>
+                <select name="cidade" id="cidade" required>
+                    <option value="" selected="selected">selecione</option>
+
+                    <option value="Belo horizonte">Belo horinzonte</option>
+                    <option value="Riberao das neves">Riberao das neves</option>
+                    <option value="contagem">contagem</option>
+                    <option value="Betim">Betim</option>
+                    <option value="Ibiriter">Ibiriter</option>
+                    <option value="Esmeraldas">Esmeraldas</option>
+            </td>
+
+
+            </select>
+
+
+
+            </fieldset>
+
+        </tr>
+
+        <fieldset>
+            <legend>Dados sobre consumo de energia</legend>
+
+            </tr>
+            <tr>
+
+
+                <td><label for="">Quais aparelhos você mais usar?</label></td>
+                <br>
+                <td>
+                    <input type="checkbox" id="Geladeira" name="Geladeira" values="Geladeira">
+                    <label for="">Geladeira</label>
+                    <br>
+
+                    <input type="checkbox" id="vd" name="vd" values="vd">
+                    <label for="">video games</label>
+                    <br>
+
+                    <input type="checkbox" id="pc" name="pc" values="pc">
+                    <label for="">computador</label>
+                    <br>
+
+                    <input type="checkbox" id="tv" name="tv" values="tv">
+                    <label for="">tv</label>
+                </td>
+
+
+            </tr>
+
+            </tr>
+            <br>
+            <br>
+
+
+
+
+
+           
+
+
+
+
+
+
+
+        </fieldset>
+
+        <tr>
+            <td>
+                <legend>comentario</legend>
+                <textarea name="coment" id="coment" cols="40" rows="5" maxlength="240" required></textarea>
+                <br>
+
+
+                <input type="submit" id="enviar" name="enviar" values="enviar dados" />
+                <input type="reset" name="limpar" id="limpar" values="limpar" />
+    </form>
+    <br>
+    <br>
+    <br><h3>
+    <button><a href="index.html">volta ao inicio</a></button></h3>
+
+</body>
+</html>
